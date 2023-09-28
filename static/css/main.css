@@ -3,6 +3,7 @@ body {
   padding:0;
   font-family: sans-serif;
   background-color:green;
+  color:white;
 }
 
 #title{
@@ -10,7 +11,6 @@ body {
   width:fit-content;
   padding:10px;
   border-radius: 20px;
-  color:white;
   letter-spacing: 2px;
 }
 #blackjack-container{
