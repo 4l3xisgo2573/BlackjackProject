@@ -6,58 +6,120 @@
     <link rel="stylesheet" href="/static/css/main.css" />
   </head>
   <body>
-    <div id="blackjack-container">
-      <h1 id="title">Blackjack</h1>
+    <div class="row">
+      <div><h1 id="title">Blackjack</h1></div>
       <div id="dealer" class="player-container">
+        <div>
+          <div>
+            <img
+              class="card"
+              src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/75507/ace-of-spades-clipart-md.png"
+            />
+          </div>
+          <h1 class="name-tag">Dealer</h1>
+        </div>
+        <div class="coin-collection">
+          <img
+            class="coin"
+            src="https://s2.coinmarketcap.com/static/img/coins/200x200/103.png"
+          /><img
+            class="coin"
+            src="https://s2.coinmarketcap.com/static/img/coins/200x200/103.png"
+          />
+        </div>
+      </div>
+      <div id="card-collection">
         <img
           class="card"
           src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/75507/ace-of-spades-clipart-md.png"
         />
-        <h1 class="nametag">Dealer</h1>
-      </div>
-      <div id="players">
-        <div class="player-container">
-          <div>
-            <img
-              class="card"
-              src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/75507/ace-of-spades-clipart-md.png"
-            />
-          </div>
-          <h1 class="nametag">Bot 1</h1>
-        </div>
-        <div class="player-container">
-          <div>
-            <img
-              class="card"
-              src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/75507/ace-of-spades-clipart-md.png"
-            />
-            <img
-              class="card"
-              src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/75507/ace-of-spades-clipart-md.png"
-            />
-            <img
-              class="card"
-              src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/75507/ace-of-spades-clipart-md.png"
-            /><img
-              class="card"
-              src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/75507/ace-of-spades-clipart-md.png"
-            />
-          </div>
-          <h1 class="nametag">You</h1>
-        </div>
-
-        <div class="player-container">
-          <div>
-            <img
-              class="card"
-              src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/75507/ace-of-spades-clipart-md.png"
-            />
-          </div>
-          <h1 class="nametag">Bot 2</h1>
-        </div>
-        <button type="button">Click me</button>
       </div>
     </div>
-    
+    <div class="row">
+      <div id="botOne" class="player-container left-side">
+        <div>
+          <div>
+            <img
+              class="card"
+              src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/75507/ace-of-spades-clipart-md.png"
+            />
+          </div>
+          <h1 class="name-tag">Bot1</h1>
+        </div>
+        <div class="coin-collection">
+          <img
+            class="coin"
+            src="https://s2.coinmarketcap.com/static/img/coins/200x200/103.png"
+          /><img
+            class="coin"
+            src="https://s2.coinmarketcap.com/static/img/coins/200x200/103.png"
+          />
+        </div>
+      </div>
+      <div id="coin-pot">
+        <img
+          class="coin"
+          src="https://s2.coinmarketcap.com/static/img/coins/200x200/103.png"
+        />
+        <img
+          class="coin"
+          src="https://s2.coinmarketcap.com/static/img/coins/200x200/103.png"
+        />
+      </div>
+
+      <div id="botTwo" class="player-container">
+        <div>
+          <div>
+            <img
+              class="card"
+              src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/75507/ace-of-spades-clipart-md.png"
+            />
+          </div>
+          <h1 class="name-tag">BotTwo</h1>
+        </div>
+        <div class="coin-collection">
+          <img
+            class="coin"
+            src="https://s2.coinmarketcap.com/static/img/coins/200x200/103.png"
+          /><img
+            class="coin"
+            src="https://s2.coinmarketcap.com/static/img/coins/200x200/103.png"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div><h1 id = "counter-display">Your at {{counter}}</h1></div>
+      <div id="user" class="player-container left-side">
+        <div>
+          <div>
+            <img
+              class="card"
+              src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/75507/ace-of-spades-clipart-md.png"
+            />
+          </div>
+          <h1 class="name-tag">You</h1>
+        </div>
+        <div class="coin-collection">
+          <img
+            class="coin"
+            src="https://s2.coinmarketcap.com/static/img/coins/200x200/103.png"
+          /><img
+            class="coin"
+            src="https://s2.coinmarketcap.com/static/img/coins/200x200/103.png"
+          />
+        </div>
+      </div>
+      <div>
+        <form method="post" id="question">
+          <h1>
+            Would you like to<br />
+            take another card?
+          </h1>
+          <button name="action" value="yes">Yes</button>
+          <button name="action" value="no">No</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
