@@ -37,7 +37,8 @@ body {
   height:32vh;
 }
 .card{
-  height:200px;
+  width:8vw;
+  max-width:120px;
 }
 .name-tag{
   background-color:gray;
@@ -47,7 +48,8 @@ body {
   margin:0 auto;
 }
 .coin{
-  height:80px;
+  width:6vw;
+  max-width:100px;
 }
 #question{
   background-color:gray;
@@ -57,10 +59,19 @@ body {
   width:fit-content;
   font-size:1.2vw;
   border-radius:20px;
-  margin-left:auto;
-  margin-right:auto;
+  
 }
 #counter-display{
   background-color:gray;
   text-align: center;
+}
+.coin-collection{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+#coin-pot{
+  display:flex;
+  align-items:center;
+  justify-content: center;
 }
