@@ -39,6 +39,7 @@ body {
 .card{
   width:8vw;
   max-width:120px;
+  border-radius:10px;
 }
 .name-tag{
   background-color:gray;
