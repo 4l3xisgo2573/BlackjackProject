@@ -42,7 +42,7 @@
     <div class="row">
       <div id="botOne" class="player-container left-side">
         <div>
-          {% include 'cards.html' %}
+          {% include 'botOnePlayer.html' %}
           <h1 class="name-tag">Bot1</h1>
         </div>
         <div class="coin-collection">
@@ -68,7 +68,7 @@
 
       <div id="botTwo" class="player-container">
         <div>
-          {% include 'cards.html' %}
+          {% include 'botTwoPlayer.html' %}
           <h1 class="name-tag">BotTwo</h1>
         </div>
         <div class="coin-collection">
@@ -83,10 +83,15 @@
       </div>
     </div>
     <div class="row">
-      <div><h1 id = "counter-display" >You are at {{counter}}</h1></div>
+      <div>
+        <h1 id="counter-display">{{name}} is at {{counter}}</h1>
+        {% if counter > 21 %} {% block content %}
+        <div>Bust</div>
+        {% endblock content %} {% endif %}
+      </div>
       <div id="user" class="player-container left-side">
         <div>
-            {% include 'cards.html' %}
+          {% include 'userPlayer.html' %}
           <h1 class="name-tag">You</h1>
         </div>
         <div class="coin-collection">
@@ -105,8 +110,8 @@
             Would you like to<br />
             take another card?
           </h1>
-          <button name="action" value="yes">Yes</button>
-          <button name="action" value="no">No</button>
+          <button name="action" value="yes">Hit</button>
+          <button name="action" value="no">Stand</button>
         </form>
       </div>
     </div>
