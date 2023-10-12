@@ -42,16 +42,7 @@
     <div class="row">
       <div id="botOne" class="player-container left-side">
         <div>
-          <div>
-            <img
-              class="card"
-              src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/75507/ace-of-spades-clipart-md.png"
-            />
-            <img
-              class="card"
-              src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/75507/ace-of-spades-clipart-md.png"
-            />
-          </div>
+          {% include 'cards.html' %}
           <h1 class="name-tag">Bot1</h1>
         </div>
         <div class="coin-collection">
@@ -77,16 +68,7 @@
 
       <div id="botTwo" class="player-container">
         <div>
-          <div>
-            <img
-              class="card"
-              src={{chosenCard}}
-            />
-            <img
-              class="card"
-              src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/75507/ace-of-spades-clipart-md.png"
-            />
-          </div>
+          {% include 'cards.html' %}
           <h1 class="name-tag">BotTwo</h1>
         </div>
         <div class="coin-collection">
@@ -101,7 +83,7 @@
       </div>
     </div>
     <div class="row">
-      <div><h1 id = "counter-display">You are at {{counter}}</h1></div>
+      <div><h1 id = "counter-display" >You are at {{counter}}</h1></div>
       <div id="user" class="player-container left-side">
         <div>
             {% include 'cards.html' %}

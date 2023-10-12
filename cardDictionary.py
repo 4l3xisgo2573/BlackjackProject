@@ -160,3 +160,5 @@ cardDB = {
         "value": 1,
     },
 }
+usedCards={
+}
